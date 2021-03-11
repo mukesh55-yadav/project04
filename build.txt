@@ -1,0 +1,47 @@
+1-local host
+the unique address of the server.it is the hostname of the server 
+that maps to unique IP address.
+Defoult IP address is 127.0.0.1
+
+2-PortNo.
+This port number is passed logically between client and server transport layers and 
+physically between the transport layer and the Internet Protocol layer and 
+forwarded on.
+
+3.Authentication-(filter to perform key genric operation)
+* Basic Authentication--
+It is enabled in web.xml
+<login-confiig>
+<auth-method> BASIC </auth-method>
+</login-config>
+
+* FORM Authentication--
+
+4.Differance between Authentication and Authorization
+
+* Authentication--
+when you log to a page with a username & password you are authenticating.
+
+* Authorization --
+It is the process of verifying that you have to access to something gaining access
+to a person becouse the permission configured on it allow you access is authorization.
+
+5.log4j.appender.layout.ConversionPattern=%d{dd MM yy HH:mm:ss} %5p %c{1}:%L - %m%n
+
+ANS..
+
+1.>	
+%d{dd MM yy HH:mm:ss}? Used to output the date of the logging event.
+The date conversion specifier may be followed by a date format 				
+specifier enclosed between braces. For example, %d{HH:mm:ss,SSS} or 
+%d{dd MMM yyyy HH:mm:ss,SSS}.
+If no date format specifier is given then ISO8601 format is assumed.
+
+2.>	%p ? Used to output the priority of the logging event.
+3.>	%c{1}? Used to output the category of the logging event. For example,
+ for the category name "a.b.c" the pattern %c{2} will output"b.c".
+4.>	%L? Used to output the line number from where the logging request was issued.
+5.>	%m? Used to output the application supplied message associated with 
+the logging event. 
+6.>	%n? Outputs the platform dependent line separator character or characters.
+
